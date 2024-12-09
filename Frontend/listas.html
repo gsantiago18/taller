@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="listas.js" defer></script>
+    <title>Listas</title>
+</head>
+<body>
+   
+    <div class="buttons">
+        <h1>CONSULTA DE REGISTROS</h1>
+        <button id="listar-estudiantes">Listar Estudiantes</button>
+        <button id="listar-profesores">Listar Profesores</button>
+        <a href="./index.html">
+            <button>
+                Ir al Inicio
+            </button>
+        </a>
+        <a href="./registro.html">
+            <button>
+                Insertar Usuario
+            </button>
+        </a>
+    </div>
+
+    <div class="table-container">
+        <div id="tabla-estudiantes" style="display: none;">
+            <h2>Estudiantes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Programa</th>
+                        <th>Semestre</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="tabla-profesores" style="display: none;">
+            <h2>Profesores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Salario</th>
+                        <th>Tipo de Vinculación</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

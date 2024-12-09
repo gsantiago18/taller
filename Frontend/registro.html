@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+
+</head>
+<body>
+    
+        <form id="form-registro">
+            <h1>Formulario de Registro</h1>
+            <br>
+            <div class="form-group">
+                <label for="tipo-persona">Tipo de Persona</label>
+                <select id="tipo-persona" name="tipo-persona" required>
+                    <option value="">Seleccione...</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="profesor">Profesor</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="numero">No.</label>
+                <input type="text" id="numero" name="numero" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="tipo-id">Tipo de Documento</label>
+                <select id="tipo-id" name="tipo_id" required>
+                    <option value="CC">Cédula</option>
+                    <option value="TI">Tarjeta de Identidad</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="numero-id">Número de ID</label>
+                <input type="text" id="numero-id" name="numero_id" required>
+            </div>
+    
+            <div class="form-group" id="programa">
+                <label for="programa">Programa</label>
+                <select id="programa" name="programa">
+                    <option value="">Seleccione...</option>
+                    <option value="Ingeniería Informática">Ingeniería Informática</option>
+                    <option value="Contabilidad">Contabilidad</option>
+                    <option value="Economía">Economía</option>
+                </select>
+            </div>
+    
+            <div class="form-group" id="semestre">
+                <label for="semestre">Semestre</label>
+                <input type="number" id="semestre" name="semestre">
+            </div>
+
+            
+    
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="fecha-nacimiento" name="fecha_nacimiento" required>
+            </div>
+
+            <div class="form-group" id="jornada">
+                <label for="jornada">Jornada</label>
+                  <select id="jornada" name="jornada" required>
+                    <option value="diurna">Diurna</option>
+                    <option value="nocturna">Nocturna</option>
+                    <option value="Sabatina">Sabatina</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="tipo-sangre">Tipo de Sangre</label>
+                <select id="tipo-sangre" name="tipo_sangre" required>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experiencia">Experiencia</label>
+                <select id="experiencia" name="experiencia">
+                    <option value="1 año"> 1 año</option>
+                    <option value="5 años">5 años</option>
+                    <option value="10 años">10 años</option>
+                    <option value="15 años">15 años</option>
+                    
+                </select>
+            </div>
+    
+            <div class="form-group" id="nomina-fields" style="display: none;">
+                <label for="salario">Salario Mensual</label>
+                <input type="number" id="salario" name="salario_mensual">
+    
+                <label for="tipo-vinculacion">Tipo de Vinculación</label>
+                <select id="tipo-vinculacion" name="tipo_vinculacion">
+                    <option value="Planta">Planta</option>
+                    <option value="Contrato">Contrato</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            
+            <button type="submit">Enviar</button>
+
+
+        </form>
+        <div class="buttons">
+            <a href="./index.html">
+                <button>
+                    Ir al Inicio
+                </button>
+            </a>
+            
+            <a href="./listas.html">
+                <button>
+                   Consultar registros
+                </button>
+            </a>
+        </div>
+
+    
+       
+    
+</body>
+</html>
